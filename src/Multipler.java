@@ -5,6 +5,6 @@ public class Multipler {
         Scanner scan=new Scanner(System.in);
         int n=scan.nextInt();
         int m=scan.nextInt();
-        System.out.println(m%n==0?"Exafct Multipler":"Not Exact");
+        System.out.println(m%n==0?"Exact Multipler":"Not Exact");
     }
 }
