@@ -5,4 +5,7 @@ abstract class Vehicle {
     abstract void stop();
 
     abstract void accelerate();
+//    void run(){
+//        System.out.println("run");
+//    }
 }

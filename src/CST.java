@@ -1,13 +1,13 @@
 public class CST extends College{
-    String dept;
-    int strength;
-    int sections;
-    String hod;
+//    String dept;
+//    int strength;
+//    int sections;
+//    String hod;
     CST(String dept, int strength, int sections){
-        super(dept,strength,sections);
-        this.dept=dept;
-        this.strength=strength;
-        this.sections=sections;
+//        super(dept,strength,sections);
+        super.dept=dept;
+        super.strength=strength;
+        super.sections=sections;
     }
     @Override
     void strength(){
