@@ -1,29 +1,20 @@
-public class Car {
-    String brand="XYZ";
-    String color="White";
-    String type="Petrol";
-    Car(String brand,String color,String type){
-        this.brand=brand;
-        this.color=color;
-        this.type=type;
+public class Car extends Vehicle implements Serviceable{
+    String fuelType;
+    Car(String brand, int model, int price, String fuelType) {
+        super(brand, model, price);
+        this.fuelType = fuelType;
     }
-    Car(){
-        System.out.println("Car Constructor");
+    @Override
+    public void service() {
+        System.out.println("Car Service ");
     }
+    @Override
     void start() {
-        System.out.println("Starting Car");
+        System.out.println("Car Start ");
     }
+    @Override
     void stop() {
-        System.out.println("Stopping Car");
+        System.out.println("Car Stop ");
     }
-    public static void main(String[] args) {
-//    Car car=new Car();
-    Car car1=new Car("Maruthi","Grey","Hybrid");
-    car1.start();
-    System.out.println(car1.type);
-    System.out.println(car1.color);
-    car1.stop();
 
-    }
 }
-
